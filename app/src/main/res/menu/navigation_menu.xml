@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<item android:title="Tools">
+	<group android:id="@+id/grupo1" 
+		   android:checkableBehavior="single">
+
+    	<item
+       		android:id="@+id/miPhoneConfg"
+			android:icon="@drawable/ic_wifi_tethering_black_24dp"
+        	android:title="@string/network_mobile"/>
+
+    	<item android:id="@+id/miJepongVpn"
+        	android:icon="@drawable/ic_globe"
+        	android:title="Jepong VPS Services"/>
+
+    	<item android:id="@+id/miSettings"
+        	android:icon="@drawable/ic_settings"
+        	android:title="@string/settings"/>
+
+	</group>
+	
+	</item>
+
+	
+	<item android:title="More">
+	<group android:id="@+id/grupo2"
+		   android:checkableBehavior="single">
+		<item android:id="@+id/miUpdateResources"
+        	android:icon="@drawable/download"
+        	android:title="Update Resources"/>
+
+		<item android:id="@+id/miNotif"
+        	android:icon="@drawable/ic_event_note_white_24dp"
+        	android:title="Notifications"/>
+            
+            <item android:id="@+id/miOffline"
+			android:icon="@drawable/a1g"
+			android:title="Offline Resources (Advanced)"/>
+
+	</group>
+	
+	</item>
+
+</menu>

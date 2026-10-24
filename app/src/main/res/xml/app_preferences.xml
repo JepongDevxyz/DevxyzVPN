@@ -1,0 +1,76 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_udp"
+		app:iconSpaceReserved="false">
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="udpForward"
+			android:summary="@string/summary_forward_udp"
+            android:defaultValue="true"
+			android:title="@string/title_forward_udp" 
+			app:iconSpaceReserved="false"/>
+
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" 
+			app:iconSpaceReserved="false"/>
+
+	</androidx.preference.PreferenceCategory>
+	
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_dns"
+		app:iconSpaceReserved="false">
+		
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="dnsForward"
+			android:defaultValue="true"
+			android:summary="@string/summary_forward_dns"
+			android:title="@string/title_forward_dns"
+			app:iconSpaceReserved="false"/>
+		
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="dnsResolver"
+            android:title="Primary DNS"
+            android:summary="1.1.1.1"
+            android:dialogMessage="Enter the Primary DNS"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" 
+			app:iconSpaceReserved="false"/>
+		
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="dnsResolver2"
+            android:title="Secondary DNS"
+            android:summary="1.0.0.1"
+            android:dialogMessage="Enter the Secondary DNS"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" 
+			app:iconSpaceReserved="false"/>
+		
+	</androidx.preference.PreferenceCategory>
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_port"
+		app:iconSpaceReserved="false">
+
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:maxLength="5"
+            android:key="sshPortaLocal"
+            android:title="@string/ssh_porta_local"
+            android:summary="1080"
+            android:defaultValue="1080"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_number" 
+			app:iconSpaceReserved="false"/>
+
+	</androidx.preference.PreferenceCategory>
+	
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+	<!-- Style geral do app -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorSecondary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="preferenceTheme">@style/AppPreference</item>
+		<item name="alertDialogTheme">@style/AppAlertDialog</item>
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="android:navigationBarColor" tools:targetApi="21">@color/colorSecondary</item>
+		<item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+		<item name="buttonTint">@color/colorText</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+	</style>
+
+	<style name="AppAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+		<item name="android:windowBackground">@drawable/background_rounded</item>
+		<item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="buttonTint">@color/colorText</item>
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+		<item name="android:textColorPrimary">@color/white</item>
+	</style>
+
+	<style name="TabTitleTheme" parent="@style/TextAppearance.Design.Tab">
+		<item name="android:textStyle">bold</item>
+		<item name="android:letterSpacing">0.1</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+	</style>
+
+	<style name="AppPreference" parent="PreferenceThemeOverlay">
+        <item name="android:textSize">13.0sp</item> 
+    </style>
+
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+		<item name="android:textColorPrimary">@color/white</item>
+		<item name="actionMenuTextColor">@android:color/holo_green_light</item>
+		<item name="colorAccent">@color/gray</item>
+		<item name="colorControlNormal">@color/white</item>
+		<item name="colorControlActivated">@color/blue_light</item>
+		<item name="colorControlHighlight">@color/gray_light</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">21sp</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_bg2</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="behavior_peekHeight">630.0dip</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent">
+
+	<com.google.android.material.card.MaterialCardView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="5dp"
+		android:id="@+id/serverListLayout"
+		android:clickable="true"
+		android:focusable="true"
+		android:foreground="?attr/selectableItemBackground"
+		android:layout_marginBottom="5.0dip"
+		android:layout_marginLeft="10.0dip"
+		android:layout_marginRight="10.0dip"
+		android:layout_marginTop="5.0dip">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:background="?selectableItemBackgroundBorderless"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="center_vertical"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:padding="8.0dip">
+
+			<ImageView
+				android:id="@+id/imageIconSpinner"
+				android:layout_height="35.0dip"
+				android:layout_marginLeft="10.0dip"
+				android:layout_width="40.0dip"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_width="200.0dip"
+				android:orientation="vertical">
+
+				<TextView
+					android:alpha="0.8"
+					android:id="@+id/imageNameSpinner"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:singleLine="true"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textSize="14.0sp"/>
+
+				<TextView
+					android:id="@+id/spinfo"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:textSize="8sp"/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/checker_img"
+				android:layout_height="25dp"
+				android:layout_marginLeft="4dp"
+				android:layout_width="25dp"
+				android:src="@drawable/cnt"
+				android:tint="#FF16C70B"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginLeft="5.0dip"
+			android:layout_marginRight="10.0dip"
+			android:background="@drawable/bg_gradient"
+			android:padding="5dp"
+			android:id="@+id/cat_bg"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="9sp"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:id="@+id/cat"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+
