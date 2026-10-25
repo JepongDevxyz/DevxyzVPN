@@ -7,7 +7,8 @@ import com.trilead.ssh2.crypto.cipher.BlockCipherFactory;
 import com.trilead.ssh2.crypto.cipher.CBCMode;
 import com.trilead.ssh2.crypto.cipher.DES;
 import com.trilead.ssh2.packets.TypesReader;
-import org.mindrot.jbcrypt.BCrypt;
+// BCrypt with pbkdf() is vendored in this same package (BCrypt.java, from sshj/mindrot).
+// No external jbcrypt dependency is needed.
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
